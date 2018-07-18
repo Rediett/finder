@@ -1,0 +1,14 @@
+def f(l,i):
+    hp = 0
+    for f in range(len(l)):
+        if l[f] == i:
+             hp = f
+    return(hp)
+
+def two(li,ta):    
+    for i in range(0,len(li)):
+        for o in range(0,len(li)):
+            fr = li[o]
+            if fr + li[i] == ta:
+                 return(f(li,fr),"is the index of",fr,"|",f(li,li[i]),"is the index of",li[i])
+print(two([1,2,20,4,5,6,0],1))
